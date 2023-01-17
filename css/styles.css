@@ -139,7 +139,7 @@ img {
 /* hero */
 
 .hero {
-  width: 1440px;
+  max-width: 1440px;
   height: 600px;
   text-align: center;
   margin-left: auto;
@@ -534,7 +534,6 @@ img {
 
 .post-text {
   padding: 8px 16px;
-  margin-right: 24px;
   width: 264px;
   height: 40px;
 }
@@ -554,6 +553,7 @@ img {
 
 .sub-group {
   display: flex;
+  gap: 24px;
 }
 /* ----------Portfolio---------- */
 
