@@ -19,6 +19,7 @@
   --icon-color: #31d0aa;
   --border-color: #8e8f99;
   --modal-color: #fcfcfc;
+  --check-color: #757575;
 }
 
 ul,
@@ -190,7 +191,8 @@ img {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.04em;
-  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
 
   border-radius: 4px;
   border: none;
@@ -533,9 +535,12 @@ img {
 }
 
 .post-text {
-  padding: 8px 16px;
+  padding-left: 16px;
   width: 264px;
   height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
 }
 
 .sub-btn {
@@ -555,6 +560,18 @@ img {
   display: flex;
   gap: 24px;
 }
+
+.button-group {
+  position: relative;
+}
+
+.sub-icon {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* ----------Portfolio---------- */
 
 /* filter */
@@ -691,8 +708,10 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding-left: 24px;
+  padding-right: 24px;
   width: 408px;
-  height: 576px;
+  height: 584px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -701,6 +720,75 @@ img {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-title {
+  padding-top: 72px;
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.input-modal {
+  width: 360px;
+  height: 40px;
+  margin-bottom: 8px;
+  padding-left: 38px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.label-modal {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--border-color);
+}
+
+.text-modal {
+  margin-bottom: 16px;
+  width: 360px;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.text-modal::placeholder {
+  padding-left: 16px;
+  padding-top: 8px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.btn-modal {
+  display: block;
+  width: 169px;
+  height: 56px;
+  margin: 24px auto 0;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  color: var(--white-color);
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.priv-check {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: var(--check-color);
 }
 
 .backdrop.is-hidden .modal {
@@ -723,6 +811,11 @@ img {
 .button-close:active {
   background-color: var(--button-color);
   fill: var(--white-color);
+  border-color: var(--button-color);
+}
+
+.priv-link {
+  color: var(--accent-color);
 }
 
 .visually-hidden {

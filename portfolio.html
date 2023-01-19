@@ -283,11 +283,24 @@
           </ul>
         </div>
         <form class="sub-form">
-          <b class="sub-title">Subscribe</b>
+          <span class="sub-title">Subscribe</span>
           <label class="label-post" for="post">E-mail</label>
           <div class="sub-group">
-            <input class="post-text" type="text" name="post" id="post" />
-            <button class="sub-btn" type="submit">Subscribe</button>
+            <input
+              class="post-text"
+              type="email"
+              name="post"
+              id="post"
+              required
+            />
+            <div class="button-group">
+              <button class="sub-btn" type="submit">
+                Subscribe
+                <svg class="sub-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </form>
       </div>
