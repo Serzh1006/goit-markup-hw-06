@@ -742,6 +742,17 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.input-wrap {
+  position: relative;
+}
+
+.icon-modal {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
 .label-modal {
   font-size: 12px;
   line-height: 1.33;
@@ -784,11 +795,31 @@ img {
 }
 
 .priv-check {
-  font-weight: 400;
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: var(--check-color);
+  user-select: none;
+}
+
+.priv-wrap {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.input-check:checked + .priv-check > .priv-wrap {
+  background-color: var(--button-color);
+  fill: #f4f4fd;
+  border-color: var(--button-color);
 }
 
 .backdrop.is-hidden .modal {
@@ -815,6 +846,7 @@ img {
 }
 
 .priv-link {
+  margin-left: 4px;
   color: var(--accent-color);
 }
 
