@@ -526,7 +526,6 @@ img {
 }
 
 .post-text {
-  margin-top: 16px;
   padding-left: 16px;
   width: 264px;
   height: 40px;
@@ -556,7 +555,7 @@ img {
 .sub-group {
   display: flex;
   gap: 24px;
-  align-items: baseline;
+  margin-top: 16px;
 }
 
 .button-group {
@@ -734,7 +733,6 @@ img {
 .input-modal {
   width: 360px;
   height: 40px;
-  margin-bottom: 8px;
   padding-left: 38px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -742,12 +740,14 @@ img {
 
 .input-wrap {
   position: relative;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .icon-modal {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 16px;
   transform: translateY(-50%);
 }
 
