@@ -175,11 +175,11 @@ img {
 
 @keyframes titleanim {
   0% {
-    transform: scaleY(0);
+    transform: scale(0);
   }
 
   100% {
-    transform: scaleY(1);
+    transform: scale(1);
   }
 }
 
@@ -425,8 +425,7 @@ img {
 .customers-link:hover,
 .customers-link:focus {
   fill: var(--button-color);
-  border: 1px solid var(--button-color);
-  border-radius: 4px;
+  border-color: var(--button-color);
 }
 
 .media {
@@ -547,9 +546,18 @@ img {
   letter-spacing: 0.04em;
 
   color: var(--white-color);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   border-radius: 4px;
   border: none;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sub-btn:hover,
+.sub-btn:focus {
+  background-color: var(--button-color);
 }
 
 .sub-group {
@@ -736,6 +744,21 @@ img {
   padding-left: 38px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  caret-color: var(--icon-color);
+}
+
+.input-modal:focus,
+.text-modal:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.input-modal:focus + .icon-name {
+  fill: var(--accent-color);
+}
+
+.icon-name {
+  fill: var(--secondary-color);
 }
 
 .input-wrap {
@@ -765,6 +788,8 @@ img {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  caret-color: var(--icon-color);
+  padding-left: 10px;
 }
 
 .text-modal::placeholder {
@@ -786,10 +811,19 @@ img {
   letter-spacing: 0.04em;
 
   color: var(--white-color);
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+  background-color: var(--button-color);
 }
 
 .priv-check {
@@ -835,6 +869,18 @@ img {
   border-radius: 50%;
   display: block;
   padding: 0;
+
+  transition-property: background-color, border-color;
+  transition-duration: 250ms, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-close:hover,
+.button-close:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+  border-color: var(--accent-color);
 }
 
 .button-close:active {
@@ -846,6 +892,15 @@ img {
 .priv-link {
   margin-left: 4px;
   color: var(--accent-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.priv-link:hover,
+.priv-link:focus {
+  color: var(--button-color);
 }
 
 .visually-hidden {
