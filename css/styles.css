@@ -515,7 +515,7 @@ img {
 }
 
 .sub-form {
-  margin-left: 80px;
+  margin-left: auto;
 }
 
 .sub-title {
@@ -525,22 +525,19 @@ img {
   color: var(--white-color);
 }
 
-.label-post {
-  display: block;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .post-text {
+  margin-top: 16px;
   padding-left: 16px;
   width: 264px;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .sub-btn {
@@ -559,6 +556,7 @@ img {
 .sub-group {
   display: flex;
   gap: 24px;
+  align-items: baseline;
 }
 
 .button-group {
