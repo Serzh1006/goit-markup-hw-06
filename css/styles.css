@@ -539,6 +539,7 @@ img {
 }
 
 .sub-btn {
+  position: relative;
   padding: 8px 64px 8px 24px;
 
   font-weight: 500;
@@ -549,6 +550,7 @@ img {
   background-color: var(--accent-color);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 
   transition-property: background-color;
   transition-duration: 250ms;
@@ -564,10 +566,6 @@ img {
   display: flex;
   gap: 24px;
   margin-top: 16px;
-}
-
-.button-group {
-  position: relative;
 }
 
 .sub-icon {
@@ -765,6 +763,7 @@ img {
   position: relative;
   display: block;
   margin-bottom: 8px;
+  margin-top: 4px;
 }
 
 .icon-modal {
@@ -781,20 +780,25 @@ img {
   color: var(--border-color);
 }
 
+.com-box {
+  color: var(--border-color);
+}
+
 .text-modal {
   margin-bottom: 16px;
+  margin-top: 8px;
+  padding-top: 8px;
+  padding-left: 16px;
   width: 360px;
   height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   caret-color: violet;
-  padding-left: 10px;
   color: var(--secondary-color);
 }
 
 .text-modal::placeholder {
-  padding-left: 16px;
   padding-top: 8px;
   font-size: 12px;
   line-height: 1.33;
@@ -816,6 +820,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 
   transition-property: background-color;
   transition-duration: 250ms;
@@ -861,6 +866,8 @@ img {
 
 .button-close {
   position: absolute;
+  display: block;
+  padding: 0;
   top: 24px;
   right: 24px;
   width: 24px;
@@ -868,8 +875,7 @@ img {
   background: var(--text-footer);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  display: block;
-  padding: 0;
+  cursor: pointer;
 
   transition-property: background-color, border-color;
   transition-duration: 250ms, 250ms;
