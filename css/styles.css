@@ -169,7 +169,7 @@ img {
 
   color: var(--header-color);
   animation-name: titleanim;
-  animation-duration: 300ms;
+  animation-duration: 500ms;
   animation-timing-function: linear;
 }
 
@@ -775,18 +775,22 @@ img {
 
 .label-modal {
   font-size: 12px;
-  line-height: 1.33;
+  line-height: 1.16;
   letter-spacing: 0.04em;
   color: var(--border-color);
 }
 
 .com-box {
+  font-size: 12px;
+  line-height: 1.16;
+
+  letter-spacing: 0.01em;
   color: var(--border-color);
 }
 
 .text-modal {
   margin-bottom: 16px;
-  margin-top: 8px;
+  margin-top: 4px;
   padding-top: 8px;
   padding-left: 16px;
   width: 360px;
