@@ -18,6 +18,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
     <title>Web Studio (Version 3.0)</title>
   </head>
   <body>
@@ -59,6 +62,79 @@
           </ul>
         </address>
       </div>
+
+      <div class="mob-menu">
+        <div class="mob-container">
+          <button class="menu-button" type="button">
+            <svg width="8px" height="8px">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mob-top">
+            <ul class="mob-list list">
+              <li class="mob-item">
+                <a class="mob-link active-color" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-item">
+                <a class="mob-link" href="">Portfolio</a>
+              </li>
+              <li class="mob-item">
+                <a class="mob-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-bottom">
+            <ul class="mob-contacts-list list">
+              <li class="mob-contacts-item">
+                <a class="mob-tel-link" href="tel:+11(000)1111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-contacts-item">
+                <a class="mob-mail-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mob-socials list">
+              <li class="mob-socials-item">
+                <a class="socials-link" href="">
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-socials-item">
+                <a class="socials-link" href="">
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-socials-item">
+                <a class="socials-link" href="">
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-socials-item">
+                <a class="socials-link" href="">
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button class="menu-hamburger" type="button">
+        <svg width="32px" height="32px">
+          <use href="./images/icons.svg#icon-hamburger"></use>
+        </svg>
+      </button>
     </header>
 
     <main>
@@ -145,6 +221,10 @@
             <li class="team-list-item">
               <img
                 class="team-list-item-img"
+                srcset="
+                  ./images/photo1.jpg              1x,
+                  ./images/photos-2x/photo1@2x.jpg 2x
+                "
                 src="./images/photo1.jpg"
                 alt="Man Mark"
                 width="264"
@@ -208,6 +288,10 @@
             <li class="team-list-item">
               <img
                 class="team-list-item-img"
+                srcset="
+                  ./images/photo2.jpg              1x,
+                  ./images/photos-2x/photo2@2x.jpg 2x
+                "
                 src="./images/photo2.jpg"
                 alt="Man Tom"
                 width="264"
@@ -271,6 +355,10 @@
             <li class="team-list-item">
               <img
                 class="team-list-item-img"
+                srcset="
+                  ./images/photo3.jpg              1x,
+                  ./images/photos-2x/photo3@2x.jpg 2x
+                "
                 src="./images/photo3.jpg"
                 alt="Woman Camila"
                 width="264"
@@ -334,6 +422,10 @@
             <li class="team-list-item">
               <img
                 class="team-list-item-img"
+                srcset="
+                  ./images/photo4.jpg              1x,
+                  ./images/photos-2x/photo4@2x.jpg 2x
+                "
                 src="./images/photo4.jpg"
                 alt="Man Daniel"
                 width="264"
@@ -407,6 +499,10 @@
               <div class="port-link-box">
                 <img
                   class="portfolio-list-item-img"
+                  srcset="
+                    ./images/port_1.jpg                  1x,
+                    ./images/photos-2x/img1-pc720@2x.jpg 2x
+                  "
                   src="./images/port_1.jpg"
                   alt="bank app"
                   width="360"
@@ -427,6 +523,10 @@
               <div class="port-link-box">
                 <img
                   class="portfolio-list-item-img"
+                  srcset="
+                    ./images/port_2.jpg                  1x,
+                    ./images/photos-2x/img2-pc720@2x.jpg 2x
+                  "
                   src="./images/port_2.jpg"
                   alt="cashless payment"
                   width="360"
@@ -447,6 +547,10 @@
               <div class="port-link-box">
                 <img
                   class="portfolio-list-item-img"
+                  srcset="
+                    ./images/port_3.jpg                  1x,
+                    ./images/photos-2x/img3-pc720@2x.jpg 2x
+                  "
                   src="./images/port_3.jpg"
                   alt="meditation app"
                   width="360"
@@ -467,6 +571,10 @@
               <div class="port-link-box">
                 <img
                   class="portfolio-list-item-img"
+                  srcset="
+                    ./images/port_4.jpg                  1x,
+                    ./images/photos-2x/img4-pc720@2x.jpg 2x
+                  "
                   src="./images/port_4.jpg"
                   alt="taxi service"
                   width="360"
@@ -487,6 +595,10 @@
               <div class="port-link-box">
                 <img
                   class="portfolio-list-item-img"
+                  srcset="
+                    ./images/port_5.jpg                  1x,
+                    ./images/photos-2x/img5-pc720@2x.jpg 2x
+                  "
                   src="./images/port_5.jpg"
                   alt="screen illustrations"
                   width="360"
@@ -507,6 +619,10 @@
               <div class="port-link-box">
                 <img
                   class="portfolio-list-item-img"
+                  srcset="
+                    ./images/port_6.jpg                  1x,
+                    ./images/photos-2x/img6-pc720@2x.jpg 2x
+                  "
                   src="./images/port_6.jpg"
                   alt="online sources"
                   width="360"
@@ -539,7 +655,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="soc-box">
           <p class="social-text">Social media</p>
           <ul class="social-list soc-f">
             <li class="social-item">

@@ -1,0 +1,35 @@
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .hero-section {
+    max-width: 767px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/dark-bg-tab.jpg");
+    background-color: var(--secondary-color);
+  }
+
+  .footer {
+    padding: 96px 0;
+  }
+
+  .footer-container {
+    max-width: 288px;
+  }
+  @media (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/photos-2x/dark-bg-tab-@2x.jpg");
+      background-color: var(--secondary-color);
+    }
+  }
+}

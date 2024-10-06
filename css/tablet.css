@@ -1,0 +1,163 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .nav-logo {
+    position: static;
+    margin-right: 0;
+    transform: translateY(0);
+  }
+
+  .modal {
+    width: 408px;
+  }
+
+  .menu-hamburger {
+    display: none;
+  }
+
+  .navigation-section {
+    display: flex;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin-left: 120px;
+  }
+
+  .address-list {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+
+  .address-list-item-link {
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .hero-section {
+    max-width: 767px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office.jpg");
+    background-color: var(--secondary-color);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/photos-2x/people-office-pc-@2x.jpg");
+      background-color: var(--secondary-color);
+    }
+  }
+
+  .advan-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .advan-list-item {
+    width: calc((736px - 24px * 1) / 2);
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-list-item {
+    width: calc((736px - 24px * 1) / 2);
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .first-wrap-f {
+    margin-right: 0;
+  }
+  .soc-box {
+    margin: 0;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    padding-left: 108px;
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+
+  .social-text {
+    text-align: left;
+  }
+
+  .subscribe-wrap {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .sub-title {
+    text-align: left;
+  }
+
+  .form-sub {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/photos-2x/people-office-pc-@2x.jpg");
+      background-color: var(--secondary-color);
+    }
+  }
+
+  .hero-section {
+    padding: 112px;
+  }
+
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+  }
+}
